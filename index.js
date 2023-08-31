@@ -31,7 +31,7 @@
 // }
 // tryRemoveFromArray([1, 2, 5, 6, 7], 9);
 
-// // Bài 3
+// Bài 3
 // function checkString(str1, str2) {
 //     let isInclude = false;
 //     let arr1 = str1.split('');
@@ -51,14 +51,13 @@
 //                 i=0;
 //                 continue;
 //             }
-//             isInclude = true;
 //             break;
 //         }
 //     }
 //     console.log(isInclude);
 // }
 
-// checkString("arredddsa", "ddd");
+// checkString("arredddsa", "arredddsa");
 
 
 
