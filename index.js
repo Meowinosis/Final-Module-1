@@ -32,32 +32,31 @@
 // tryRemoveFromArray([1, 2, 5, 6, 7], 9);
 
 // Bài 3
-// function checkString(str1, str2) {
-//     let isInclude = false;
-//     let arr1 = str1.split('');
-//     let arr2 = str2.split('');
-//     for (let i = 0; i < arr1.length; i++) {
-//         if (arr1[i] === arr2[0]) {
-//             arr1.splice(0, i);
-//             for (let a = 0, j = 0; j < arr2.length; a++, j++) {
-//                 if (arr1[a] !== arr2[j]) {
-//                     isInclude = false;
-//                     break;
-//                 } else {
-//                     isInclude = true;
-//                 }
-//             }
-//             if (!isInclude) {
-//                 i=0;
-//                 continue;
-//             }
-//             break;
-//         }
-//     }
-//     console.log(isInclude);
-// }
-
-// checkString("arredddsa", "arredddsa");
+function checkString(str1, str2) {
+    let isInclude = false;
+    let arr1 = str1.split('');
+    let arr2 = str2.split('');
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] === arr2[0]) {
+            arr1.shift().repeat(i);
+            for (let a = 0, j = 0; j < arr2.length; a++, j++) {
+                if (arr1[a] !== arr2[j]) {
+                    isInclude = false;
+                    break;
+                } else {
+                    isInclude = true;
+                }
+            }
+            if (!isInclude) {
+                i=0;
+                continue;
+            }
+            break;
+        }
+    }
+    console.log(isInclude);
+}
+checkString("arreddds!a", "dddsa");
 
 
 
